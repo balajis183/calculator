@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+  </head>
+
+  <style>
+    h1,
+    h2,
+    h3 {
+      color: darkblue;
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 10%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    label,
+    input {
+      padding: 5px;
+      margin: 2px;
+    }
+  </style>
+  <body>
+    <h1><i>My Calculator </i></h1>
+    <form>
+      <label for="num1"> Number 1:</label>
+      <input type="number" id="num1" value="0" />
+
+      <label for="num2">Number 2:</label>
+      <input type="number" id="num2" value="0" />
+
+      <label for="choice"> Choice:</label>
+      <input type="number" id="choice" value="0" />
+
+      <input type="submit" onclick="handleSubmit()" />
+    </form>
+
+    <h3>
+      <p>
+        <i>
+          Enter the valid choice <br />
+          1. addition 2. subtraction 3. multiplication 4. division
+        </i>
+      </p>
+    </h3>
+    <h2>
+      <p>
+        <i>Answer is : <span id="ans"></span></i>
+      </p>
+    </h2>
+
+    <br />
+    <script src="./calculator.js"></script>
+  </body>
+</html>
